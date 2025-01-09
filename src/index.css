@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-cream; /* Corrected class name */
+}
+
+.text-gold {
+    color: #8d6b2e; /* Darker shade of gold */
+    font-size: 1.4rem; /* Increased font size */
+}
+
+@layer components {
+    .btn {
+        @apply px-6 py-3 rounded-full text-white text-lg shadow-lg bg-dark-blue hover:bg-gold;
+    }
+
+    .btn-1 {
+        @apply px-2 py-1 rounded text-white text-lg shadow-md bg-dark-blue hover:bg-copper;
+    }
+
+    .input {
+        @apply border-2 rounded-2xl p-2 border-light-gray outline-none;
+    }
+
+    .form {
+        @apply flex flex-col w-full h-full gap-3;
+    }
+
+    .label {
+        @apply text-xl font-medium capitalize;
+    }
+
+    .h2 {
+        @apply text-2xl font-semibold uppercase;
+    }
+    
+}
